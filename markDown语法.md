@@ -10,7 +10,7 @@
 #换行
 如要强制换行，需要在行结尾加上两个空格符和回车符。
 
-*	this two-line bullet   
+* this two-line bullet   
 	won't break
 
 #块引用 - blockquote
@@ -39,13 +39,11 @@
 >	- 	Booze.
 
 #有序列表 - orderList
->1.	red
+> 1.	red
 >	*	玫瑰红
 >	* 	草莓红
->2.	blue
-
-
-3. yellow
+> 2.	blue
+> 3. yellow
 
 #链接
 >两种方式创建链接：*内敛* 和*引用*，可以使用方括号来分隔要转换为链接的文本
@@ -98,6 +96,16 @@ you've got to put paragraph tags in your blockquotes:
 	}
 	int c = sum(a,b);
 	
+> 或者直接通过以下方式：
 
+```objc
+int a = 0;
+inb b = 0;
+- (int)sumWithA:(int)a andB:(int) b {
+	return a+b;
+}
+int c = [self sumWithA:10 andB:20];
+ 
+ ```
 #分行
 如果你打三个星号 `***` 或者三个下划线 `---` 在一行中，我会展示分行。
